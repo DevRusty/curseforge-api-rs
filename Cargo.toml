@@ -1,0 +1,20 @@
+[package]
+name = "curseforge-api-rs"
+version = "0.1.0"
+edition = "2024"
+authors = ["Weever1337 <weever1337@gmail.com>", "Nixxoq <nixxoq@outlook.com>"]
+description = "A simple wrapper around Curseforge API"
+repository = "https://github.com/DevRusty/curseforge-api-rs"
+license = "MIT"
+keywords = ["minecraft", "curseforge", "mods"]
+publish = ["crates-io"]
+categories = ["api-bindings"]
+
+[dependencies]
+reqwest = { version = "0.12.5", features = ["json"] }
+tokio = { version = "*", features = ["full"] }
+serde = { version = "*", features = ["derive"] }
+serde_json = { version = "*" }
+chrono = { version = "0.4.41", features = ["serde"] }
+url = { version = "2.5.4", features = ["serde"] }
+thiserror = "2.0.12"
